@@ -18,4 +18,4 @@ list.reverse()          #对列表元素进行原地翻转
 list.sort()             #列表元素原地排序
 list.copy()             #返回列表对象的浅赋值，python2中没有
 
-3. list创建与删除，
+3. list创建与
