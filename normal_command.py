@@ -1,6 +1,23 @@
 1. x.split(',') 分割字符串，按照括号中的分隔符
+声明：s为字符串，rm为要删除的字符序列
+s.strip(rm)
+删除s字符串中开头、结尾处，位于
+rm删除序列的字符
+s.lstrip(rm)
+删除s字符串中开头处，位于
+rm删除序列的字符
+s.rstrip(rm)
+删除s字符串中结尾处，位于
+rm删除序列的字符
+注意：
+(1).当rm为空时，默认删除空白符（包括
+'\n', '\r', '\t', ' ')
+(2).这里的rm删除序列是只要边（开头或结尾）上的字符在删除序列内，就删除掉。
 
 2. github 使用常见问题
+首次配置默认的用户名和Email地址信息等：
+$git config user.name "your name"
+$git config user.email "your email"
 新建工程后，gpg设置问题
 $git config -global gpg.program "C:\Program Files (x86)\GNU\GnuPG\gpg2.exe"
 $git config user.signingkey 0FIOKS90(gpg密钥)
@@ -13,6 +30,11 @@ $git config user.signingkey 0FIOKS90(gpg密钥)
 (5)git push origin master    #将本地上传内容推送到远程
 (6)git push -u origin master #将本地上所有内容推送到远程库，适用于第一次push
 
+4.从其他平台将代码同步到本地：
+(1)在本地新建一个文件夹，在该文件夹下创建工程git init
+(2)创建与远程库（需要下载的代码地址）的链接 git remote add origin git@github.com:pythonhan/learngit.git
+(3)git clone git@github.com:pythonhan/learngit.git(项目地址)，此时本地就会有相关文件
+(4)如果平台有更新， git pull origin master 即可完成更新
 
 
 其他常用：
