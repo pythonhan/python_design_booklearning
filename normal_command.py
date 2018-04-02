@@ -36,6 +36,11 @@ $git config user.signingkey 0FIOKS90(gpg密钥)
 (3)git clone git@github.com:pythonhan/learngit.git(项目地址)，此时本地就会有相关文件
 (4)如果平台有更新， git pull origin master 即可完成更新
 
+windows获取rsa:
+ (1) ssh-keygen -t rsa -C "zhangsan@gmial.com"
+ (2)然后一路回车即可。在"C:\Documents and Settings\Administrator\.ssh"中就有我们需要的文件id_rsa.pub
+ (3)然后打开oschina添加SSH公钥的地方，点击这里，前提是你已经登陆了。然后输入个标题，把刚才生成的id_rsa.pub中的内容
+拷贝一份到公钥处，然后点击确定即可，这样准备工作就已经完成了。
 
 其他常用：
 (1)git status  #查看当前文件夹
